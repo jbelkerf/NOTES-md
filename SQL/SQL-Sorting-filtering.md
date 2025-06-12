@@ -40,5 +40,17 @@ $	SELECT * FROM student_table WHERE faculty LIKE 'Sc%';
 ## IN OPERATOR
 - used to select multiple possible values :
 ```sql
-$	SELECT * FROM student_table WHERE
+$	SELECT * FROM student_table WHERE country IN('USA', 'UK');
+```
+
+
+
+# DISTINCT clause
+- return only unique values
+```sql
+$	SELECT DISTINCT country from student_table;
+```
+- if we use multiples columns we get the different combination of this columns:
+```sql
+$	SELECT DISTINCT faculty, country FROM student_table;
 ```
