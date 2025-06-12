@@ -29,3 +29,16 @@ $	SELECT column_1 FROM table_name WHERE ID BETWEEN 1 AND 9;
 ```sql
 $	SELECT column_1 FROM table_name WHERE date_of_birth BETWEEN '2001-07-01' and '2003-01-02';
 ```
+## LIKE OPERATOR
+- used to check string patterns:
+```sql
+$	SELECT * FROM student_table WHERE faculty LIKE 'Sc%';
+```
+-> the '%' is used to represent 0 or one or multiple chars
+-> the '_' is used to represents 1 char
+
+## IN OPERATOR
+- used to select multiple possible values :
+```sql
+$	SELECT * FROM student_table WHERE
+```
