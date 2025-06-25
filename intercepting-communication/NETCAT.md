@@ -27,9 +27,3 @@ $	 nc -N 10.0.0.1 31337
 nc -l 31337
 ```
 
-## Scan with ping
-- ping command is used to know if a host is up :
-```bash
-
-
-```
