@@ -31,4 +31,5 @@ nc -l 31337
 - ping command is used to know if a host is up :
 ```bash
 
+
 ```
