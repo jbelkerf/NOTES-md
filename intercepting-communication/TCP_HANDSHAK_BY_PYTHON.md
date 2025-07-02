@@ -1,4 +1,8 @@
+- this is the tcp handshake theory:
+![Alt tcp handshake](tcp_handshatke.png)
 
+
+- this is my implementation 
 ```python
 from scapy.all import TCP, IP, send, sniff
 
@@ -10,7 +14,7 @@ tcp = TCP(sport=31337, dport=31337, seq=31337 , flags="S")
 
 packet = ip / tcp
 
-  
+send(packet)
 
 def handle_packet(pckt):
 
@@ -38,8 +42,6 @@ def handle_packet(pckt):
 
   
   
-  
-send(packet)
 
 sniff(count=10, filter="ip host 10.0.0.2", prn=handle_packet)
 ```
