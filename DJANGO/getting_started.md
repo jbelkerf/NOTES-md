@@ -38,7 +38,7 @@ source first-dg-prjct/bin/activate
 #install django
 pip install django
 #start a project
-django-admin startproject first-prjct
+django-admin startproject first_prjct
 python manage.py runserver
 ```
 
