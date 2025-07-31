@@ -6,8 +6,10 @@
 
 --> the url.py file :
 ```python
-path('getuser/<name>/<id>', views.pathview, name='pathview'),
+# the str is the path conerter type and the name is the parameter name
+path('getuser/<str:name>/<id>', views.pathview, name='pathview'),
 ```
+
 --> the views.py
 ```python
 
